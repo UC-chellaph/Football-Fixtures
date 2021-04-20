@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Football Fixtures - Home</title>
+ <link rel="stylesheet"href="{{ url_for('static', filename='Styles.css') }}">
+</head>
+<body>
+
+<div class="topnav">
+    <a class="active" href="/">Home</a>
+  <a href="/standings">Standings</a>
+  <a href="/results">Results</a>
+<div class="dropdown"> Teams
+    <div class="dropdown-content">
+
+        <button  type="button" ><a href="/teams/fc-arsenal">Arsenal</a></button>
+
+    <button  type="button" ><a href="/teams/aston-villa">Aston Villa</a></button>
+
+    <button  type="button" > <a href="/teams/brighton-amp-hove-albion">Brighton and Hove Albion</a></button>
+
+    <button  type="button" ><a href="/teams/fc-burnley">Burnley</a></button>
+
+    <button  type="button" ><a href="/teams/fc-chelsea">Chelsea</a></button>
+
+    <button  type="button" ><a href="/teams/crystal-palace">Crystal Palace</a></button>
+
+    <button  type="button" ><a href="/teams/fc-everton">Everton</a></button>
+
+    <button  type="button" ><a href="/teams/fc-fulham">Fulham</a></button>
+
+    <button  type="button" ><a href="/teams/leeds-united">Leeds United</a></button>
+
+    <button  type="button" ><a href="/teams/leicester-city">Leicester City</a></button>
+
+    <button  type="button" ><a href="/teams/fc-liverpool">Liverpool</a></button>
+
+    <button  type="button" ><a href="/teams/manchester-city">Manchester City</a></button>
+
+    <button  type="button" ><a href="/teams/manchester-united">Manchester United</a></button>
+
+    <button  type="button" ><a href="/teams/newcastle-united">Newcastle United</a></button>
+
+    <button  type="button" ><a href="/teams/sheffield-united">Sheffield United</a></button>
+
+    <button  type="button" ><a href="/teams/fc-southampton">Southampton</a></button>
+
+    <button  type="button" ><a href="/teams/tottenham-hotspur">Spurs</a></button>
+
+    <button  type="button" ><a href="/teams/west-bromwich-albion">West Bromwich Albion</a></button>
+
+    <button  type="button"><a href="/teams/west-ham-united">West Ham United</a></button>
+
+    <button  type="button" ><a href="/teams/wolverhampton-wanderers">Wolves</a></button>
+</div>
+    </div>
+     <a href="/contact">Contact</a>
+</div>
+</div>
+<div class="main-text">
+<h3>Welcome to Football Fixtures</h3>
+<h5>This program was designed by Prateek Chellani as part of a class project.
+    It scrapes data from several credible Football websites, such as Transfermarkt and Sofascore to
+    retrieves scores, results, fixtures and standings for the world's leading football league, the English Premier League</h5>
+<h4>Supported Teams</h4>
+    <h5>At the moment, only the current top flight Premier League Teams are supported.
+    A full list of these teams can be found by hovering over the teams tab.</h5>
+    <h4>Installion Instructions and Troubleshooting</h4>
+    <h5>Please visit my <a class="link" href="https://github.com/UC-chellaph">github</a> page for troubleshooting errors and viewing the code. While you're there, I'd
+    appreciate feedback on the code for this project, as well as any of my other projects. You can visit the
+        <a class="link" href="/contact"> Contact </a>tab to reach out to me with suggestions.</h5>
+</div>
+</body>
+</html>

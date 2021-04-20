@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Football Fixtures - Team Fixtures</title>
+ <link rel="stylesheet"href="{{ url_for('static', filename='Styles.css') }}">
+</head>
+<body>
+
+<div class="topnav">
+    <a href="/">Home</a>
+  <a href="/standings">Standings</a>
+  <a href="/results">Results</a>
+<div class="dropdown-active"> Teams
+    <div class="dropdown-content">
+
+        <button  type="button" ><a href="/teams/fc-arsenal">Arsenal</a></button>
+
+    <button  type="button" ><a href="/teams/aston-villa">Aston Villa</a></button>
+
+    <button  type="button" > <a href="/teams/brighton-amp-hove-albion">Brighton and Hove Albion</a></button>
+
+    <button  type="button" ><a href="/teams/fc-burnley">Burnley</a></button>
+
+    <button  type="button" ><a href="/teams/fc-chelsea">Chelsea</a></button>
+
+    <button  type="button" ><a href="/teams/crystal-palace">Crystal Palace</a></button>
+
+    <button  type="button" ><a href="/teams/fc-everton">Everton</a></button>
+
+    <button  type="button" ><a href="/teams/fc-fulham">Fulham</a></button>
+
+    <button  type="button" ><a href="/teams/leeds-united">Leeds United</a></button>
+
+    <button  type="button" ><a href="/teams/leicester-city">Leicester City</a></button>
+
+    <button  type="button" ><a href="/teams/fc-liverpool">Liverpool</a></button>
+
+    <button  type="button" ><a href="/teams/manchester-city">Manchester City</a></button>
+
+    <button  type="button" ><a href="/teams/manchester-united">Manchester United</a></button>
+
+    <button  type="button" ><a href="/teams/newcastle-united">Newcastle United</a></button>
+
+    <button  type="button" ><a href="/teams/sheffield-united">Sheffield United</a></button>
+
+    <button  type="button" ><a href="/teams/fc-southampton">Southampton</a></button>
+
+    <button  type="button" ><a href="/teams/tottenham-hotspur">Spurs</a></button>
+
+    <button  type="button" ><a href="/teams/west-bromwich-albion">West Bromwich Albion</a></button>
+
+    <button  type="button"><a href="/teams/west-ham-united">West Ham United</a></button>
+
+    <button  type="button" ><a href="/teams/wolverhampton-wanderers">Wolves</a></button>
+</div>
+    </div>
+     <a href="/contact">Contact</a>
+</div>
+</div>
+
+<div class="main-text">
+<div class="row">
+
+    <div class="column">
+        <h3>Results</h3>
+        <div style="text-indent: -9999px">
+        {% for table in tables %}
+                    {{titles[loop.index]}}
+                    {{ table|safe }}
+        {% endfor %}
+    </div>
+    </div>
+
+    <div class="vertical"></div>
+
+    <div class="column">
+        <h3>Current Roster</h3>
+        <div style="text-indent: -9999px">
+            {% for table in rosters %}
+                    {{rosterTitles[loop.index]}}
+                    {{ table|safe }}
+        {% endfor %}
+        </div>
+
+        <h3>Record Transfers</h3>
+        <div style="text-indent: -9999px">
+        {% for table in transfers %}
+                    {{transferTitles[loop.index]}}
+                    {{ table|safe }}
+        {% endfor %}
+    </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

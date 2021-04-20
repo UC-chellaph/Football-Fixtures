@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Football Fixtures - Team Fixtures</title>
+ <link rel="stylesheet"href="{{ url_for('static', filename='Styles.css') }}">
+</head>
+<body>
+
+<div class="topnav">
+    <a href="/">Home</a>
+  <a href="/standings">Standings</a>
+  <a class="active" href="/results">Results</a>
+<div class="dropdown"> Teams
+    <div class="dropdown-content">
+
+    <button  type="button" ><a href="/teams/fc-arsenal">Arsenal</a></button>
+
+    <button  type="button" ><a href="/teams/aston-villa">Aston Villa</a></button>
+
+    <button  type="button" > <a href="/teams/brighton-amp-hove-albion">Brighton and Hove Albion</a></button>
+
+    <button  type="button" ><a href="/teams/fc-burnley">Burnley</a></button>
+
+    <button  type="button" ><a href="/teams/fc-chelsea">Chelsea</a></button>
+
+    <button  type="button" ><a href="/teams/crystal-palace">Crystal Palace</a></button>
+
+    <button  type="button" ><a href="/teams/fc-everton">Everton</a></button>
+
+    <button  type="button" ><a href="/teams/fc-fulham">Fulham</a></button>
+
+    <button  type="button" ><a href="/teams/leeds-united">Leeds United</a></button>
+
+    <button  type="button" ><a href="/teams/leicester-city">Leicester City</a></button>
+
+    <button  type="button" ><a href="/teams/fc-liverpool">Liverpool</a></button>
+
+    <button  type="button" ><a href="/teams/manchester-city">Manchester City</a></button>
+
+    <button  type="button" ><a href="/teams/manchester-united">Manchester United</a></button>
+
+    <button  type="button" ><a href="/teams/newcastle-united">Newcastle United</a></button>
+
+    <button  type="button" ><a href="/teams/sheffield-united">Sheffield United</a></button>
+
+    <button  type="button" ><a href="/teams/fc-southampton">Southampton</a></button>
+
+    <button  type="button" ><a href="/teams/tottenham-hotspur">Spurs</a></button>
+
+    <button  type="button" ><a href="/teams/west-bromwich-albion">West Bromwich Albion</a></button>
+
+    <button  type="button"><a href="/teams/west-ham-united">West Ham United</a></button>
+
+    <button  type="button" ><a href="/teams/wolverhampton-wanderers">Wolves</a></button>
+</div>
+    </div>
+     <a href="/contact">Contact</a>
+</div>
+</div>
+
+<div class="main-text">
+
+<h3> Pick the Game Week You'd like to View the Result For</h3>
+<div class="box">
+<select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Pick a Game Week</option>
+    <option value="/results/week=1">Week 1</option>
+    <option value="/results/week=2">Week 2</option>
+    <option value="/results/week=3">Week 3</option>
+    <option value="/results/week=4">Week 4</option>
+    <option value="/results/week=5">Week 5</option>
+    <option value="/results/week=6">Week 6</option>
+    <option value="/results/week=7">Week 7</option>
+    <option value="/results/week=8">Week 8</option>
+    <option value="/results/week=9">Week 9</option>
+    <option value="/results/week=10">Week 10</option>
+    <option value="/results/week=11">Week 11</option>
+    <option value="/results/week=12">Week 12</option>
+    <option value="/results/week=13">Week 13</option>
+    <option value="/results/week=14">Week 14</option>
+    <option value="/results/week=15">Week 15</option>
+    <option value="/results/week=16">Week 16</option>
+    <option value="/results/week=17">Week 17</option>
+    <option value="/results/week=18">Week 18</option>
+    <option value="/results/week=19">Week 19</option>
+    <option value="/results/week=20">Week 20</option>
+    <option value="/results/week=21">Week 21</option>
+    <option value="/results/week=22">Week 22</option>
+    <option value="/results/week=23">Week 23</option>
+    <option value="/results/week=24">Week 24</option>
+    <option value="/results/week=25">Week 25</option>
+    <option value="/results/week=26">Week 26</option>
+    <option value="/results/week=27">Week 27</option>
+    <option value="/results/week=28">Week 28</option>
+    <option value="/results/week=29">Week 29</option>
+    <option value="/results/week=30">Week 30</option>
+    <option value="/results/week=31">Week 31</option>
+    <option value="/results/week=32">Week 32</option>
+    <option value="/results/week=33">Week 33</option>
+    <option value="/results/week=34">Week 34</option>
+    <option value="/results/week=35">Week 35</option>
+    <option value="/results/week=36">Week 36</option>
+    <option value="/results/week=37">Week 37</option>
+    <option value="/results/week=38">Week 38</option>
+</select>
+</div>
+
+<div class="main-table">
+    <div style="text-indent: -9999px">
+{% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+</div>
+</div>
+</div>
+</body>
+</html>
