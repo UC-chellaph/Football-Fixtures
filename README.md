@@ -1,4 +1,4 @@
-# Football-Stats
+# Football-Fixtures
 
 This program was designed by Prateek Chellani, as an adaptation of the Football-Stats Project, also created in Python serving a similar role. However, Football-Stats contains several additional features, compared to the original project, as well as Flask Compatibility. This project allows the user to load the application through the local host, and browse data scraped live from several credible websites. For a full list of differences between the projects, please see the table below
 
