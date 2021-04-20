@@ -12,16 +12,16 @@ If you're planning on cloning one of these repositories, here's a brief comparis
 |**Feature**        | **Football-Fixtures (This Project)**                         | **Football Stats**         | **Notes** |
 |-------------------|--------------------------------------------------------------|----------------------------|----------------------------------------|
 |All 20 PL Teams    | [X]                                                          | [X]                        |                                        |
-|Flask FrontEnd     | [X]                                                          | []                         |                                        |
-|Console Runnable   | []                                                           | [X]                        |                                        |
+|Flask FrontEnd     | [X]                                                          | [ ]                        |                                        |
+|Console Runnable   | [ ]                                                          | [X]                        |                                        |
 |Data Handling      | [X]                                                          | [X]                        |                                        |
-|Record Transfers   | [X]                                                          | []                         |                                        |
-|Full-team Rosters  | [X]                                                          | []                         |                                        |
-|Live Data Retrieval| [X]                                                          | []                         |  Partially included in Football Stats  |
-|Enhanced UI        | [X]                                                          | []                         |                                        |
-|Top Scorer         | [X]                                                          | []                         |                                        |
-|Easy configuration | [X]                                                          | []                         |                                        |
-|CLI compatible     | []                                                           | [X]                        |                                        |
+|Record Transfers   | [X]                                                          | [ ]                        |                                        |
+|Full-team Rosters  | [X]                                                          | [ ]                        |                                        |
+|Live Data Retrieval| [X]                                                          | [ ]                        |  Partially included in Football Stats  |
+|Enhanced UI        | [X]                                                          | [ ]                        |                                        |
+|Top Scorer         | [X]                                                          | [ ]                        |                                        |
+|Easy configuration | [X]                                                          | [ ]                        |                                        |
+|CLI compatible     | [ ]                                                          | [X]                        |                                        |
 
 
  -----
